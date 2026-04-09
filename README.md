@@ -372,6 +372,8 @@ Setelah itu anda buka file **app/Config/Routes.php** dan sesuaikan kodenya.
 Buka url dengan alamat **http://localhost:8080/admin/artikel** ketika alamat tersebut diakses 
 maka, akan dimuculkan halaman login.
 
+<img width="1919" height="1125" alt="image" src="https://github.com/user-attachments/assets/8f2f9430-f15f-42a2-ad42-af166f2d2fad" />
+
 ### Step 7 | Menambahkan Fungsi Logout 
 Tambahkan method logout pada Controller User seperti berikut:
 
