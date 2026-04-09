@@ -1,4 +1,4 @@
-<img width="882" height="458" alt="image" src="https://github.com/user-attachments/assets/3a718686-5612-4d56-8d84-2700440367f5" /><img width="1919" height="1129" alt="Screenshot 2026-04-07 162339" src="https://github.com/user-attachments/assets/107f6921-a959-4b3c-9cf3-11e6de82a615" />## LAPORAN PRAKTIKUM 1 - 4
+## LAPORAN PRAKTIKUM 1 - 4
 NAMA : ALI GUNAWAN | KELAS : I241C | NIM : 312410400
 
 ## Praktikum 1: PHP Framework (Codeigniter)
