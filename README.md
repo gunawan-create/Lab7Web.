@@ -275,20 +275,106 @@ Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().
 
 ## Praktikum 3: View Layout dan View Cell 
 ## Langkah-langkah Praktikum 3
-### Step 1 | Membuat Database
+### Step 1 | Membuat Layout Utama 
+Membuat folder layout pada **app/Views/** lalu Buat file **main.php** di dalam folder layout dengan kode berikut 
 
+<img width="1057" height="894" alt="image" src="https://github.com/user-attachments/assets/39511b90-2ed9-4339-ae89-efccce4bcb95" />
 
+<img width="971" height="501" alt="image" src="https://github.com/user-attachments/assets/7d74219e-2e65-4521-a773-9eb195a0a170" />
 
+**Hasil Tampilan**
 
+<img width="1919" height="1126" alt="Screenshot 2026-04-08 225800" src="https://github.com/user-attachments/assets/a06a52bc-3ddc-4890-9161-edfd8367de47" />
 
+### Step 2 | Modifikasi File View 
+Mengubah **app/Views/home.php** agar sesuai dengan layout baru: 
 
+<img width="548" height="281" alt="image" src="https://github.com/user-attachments/assets/2e0994ae-6090-4965-853e-09295f82f226" />
 
+### Step 3 | Membuat Class View Cell 
+Membuat folder **Cells** di dalam app/ dan membuat file **ArtikelTerkini.php** di dalam **app/Cells/** dengan kode berikut,
 
+<img width="909" height="509" alt="image" src="https://github.com/user-attachments/assets/2a133286-5836-4f83-a2ed-2264d5037738" />
 
+### Step 4 | Membuat View untuk View Cell 
+Membuat folder **components** di dalam **app/Views/** dan Membuat file **artikel_terkini.php** di dalam **app/Views/components/** dengan kode berikut:
 
+<img width="867" height="234" alt="image" src="https://github.com/user-attachments/assets/20475a34-2a83-46d0-80f7-efd6abce7663" />
 
+## Praktikum 4: View Layout dan View Cell 
+## Langkah-langkah Praktikum 4
+### Step 1 | Membuat Tabel User
 
+<img width="625" height="250" alt="Screenshot 2026-04-09 094434" src="https://github.com/user-attachments/assets/144b5d7a-5516-43f0-818c-b3b2797f6642" />
 
+### Step 2 | Membuat Model User 
+Selanjutnya anda buat **Model** untuk memproses data Login. Buat file baru pada direktori 
+**app/Models** dengan nama **UserModel.php** 
 
+<img width="905" height="331" alt="image" src="https://github.com/user-attachments/assets/98fff3b6-b5bd-4029-8be9-8176dfef8a48" />
+
+### Step 3 | Membuat Controller User 
+Selanjutnya Buat Controllers baru dengan nama **User.php** pada direktori **app/Controllers.** Kemudian 
+tambahkan method **index()** untuk menampilkan daftar user, dan **method login()** untuk proses 
+login. 
+
+<img width="966" height="702" alt="image" src="https://github.com/user-attachments/assets/609686e9-3ddc-4722-8086-fe04e3388d0d" />
+
+<img width="862" height="517" alt="image" src="https://github.com/user-attachments/assets/9f0c598c-d4e4-47f6-bb02-3d05123aa6cd" />
+
+<img width="902" height="421" alt="image" src="https://github.com/user-attachments/assets/0ea7da2d-dd69-466d-aa1d-c826e3694b0c" />
+
+### Step 4 | Membuat View Login 
+Buat direktori baru dengan nama user pada direktori **app/views,** kemudian buat file baru 
+dengan nama **login.php.** 
+
+<img width="1107" height="952" alt="image" src="https://github.com/user-attachments/assets/2cf4e03a-5ab3-4228-bf80-b507e555bb74" />
+
+### Step 4 | Menambahkan Database Seeder 
+Untuk keperluan ujicoba modul login, kita perlu memasukkan data user dan password kedaalam database. Untuk itu buat 
+database seeder untuk tabel user. Buka CLI, kemudian tulis perintah berikut: 
+
+<img width="899" height="75" alt="Screenshot 2026-04-09 095406" src="https://github.com/user-attachments/assets/4912602f-751f-4820-bf05-67262e5966e1" />
+
+Selanjutnya, buka file **UserSeeder.php** yang berada di lokasi direktori 
+**/app/Database/Seeds/UserSeeder.php** kemudian isi dengan kode berikut,
+
+<img width="907" height="553" alt="image" src="https://github.com/user-attachments/assets/811fef60-f6ab-4710-8015-e20b78b49b77" />
+
+Selanjutnya buka kembali CLI dan ketik perintah berikut: 
+
+<img width="927" height="90" alt="Screenshot 2026-04-09 095432" src="https://github.com/user-attachments/assets/19839407-cd70-4e73-8679-ddde9526edba" />
+
+### Step 5 | Uji Coba Login 
+Selanjutnya buka url **http://localhost:8080/user/login** seperti berikut: 
+
+<img width="1919" height="1127" alt="Screenshot 2026-04-09 100934" src="https://github.com/user-attachments/assets/e8f32c75-c5a2-4f2a-9b75-bfc6961e476a" />
+
+### Step 6 | Menambahkan Auth Filter 
+Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama **Auth.php** pada 
+direktori **app/Filters.**
+
+<img width="889" height="621" alt="image" src="https://github.com/user-attachments/assets/20f0ab2e-d6ba-458a-9eee-2337d75c54f3" />
+
+Selanjutnya buka file **app/Config/Filters.php** tambahkan kode berikut:
+
+<img width="452" height="50" alt="image" src="https://github.com/user-attachments/assets/484a091f-59ad-4410-aa53-cd481e641bd1" />
+
+Seperti ini bentukannya;
+
+<img width="603" height="257" alt="image" src="https://github.com/user-attachments/assets/dffbb0c0-1a3f-4576-bcb2-f5b3b50a325a" />
+
+Setelah itu anda buka file **app/Config/Routes.php** dan sesuaikan kodenya.
+
+<img width="804" height="239" alt="image" src="https://github.com/user-attachments/assets/970234c4-c540-4030-8d5a-3efa998e41a2" />
+
+### Step 7 | Percobaan Akses Menu Admin 
+Buka url dengan alamat **http://localhost:8080/admin/artikel** ketika alamat tersebut diakses 
+maka, akan dimuculkan halaman login.
+
+### Step 7 | Menambahkan Fungsi Logout 
+Tambahkan method logout pada Controller User seperti berikut:
+
+<img width="606" height="202" alt="image" src="https://github.com/user-attachments/assets/1faf3588-5dae-4421-ba42-158892edcf48" />
 
 
