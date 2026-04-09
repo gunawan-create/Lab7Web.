@@ -1,10 +1,5 @@
-## LAPORAN PRAKTIKUM 1 - 4
+<img width="882" height="458" alt="image" src="https://github.com/user-attachments/assets/3a718686-5612-4d56-8d84-2700440367f5" /><img width="1919" height="1129" alt="Screenshot 2026-04-07 162339" src="https://github.com/user-attachments/assets/107f6921-a959-4b3c-9cf3-11e6de82a615" />## LAPORAN PRAKTIKUM 1 - 4
 NAMA : ALI GUNAWAN | KELAS : I241C | NIM : 312410400
-
-## Instruksi Praktikum 
-1. Persiapkan text editor misalnya VSCode. 
-2. Buat folder baru dengan nama lab11_php_ci pada docroot webserver (htdocs) 
-3. Ikuti langkah-langkah praktikum yang akan dijelaskan berikutnya.
 
 ## Praktikum 1: PHP Framework (Codeigniter)
 ## Langkah-langkah Praktikum 1
@@ -163,3 +158,137 @@ Kemudian ubah file app/view/about.php seperti berikut.
 Selanjutnya refresh tampilan pada halaman **http://localhost:8080/about**
 
 <img width="1289" height="712" alt="Screenshot 2026-04-04 210931" src="https://github.com/user-attachments/assets/8479f1ea-1c2a-4369-b941-c06b2bc2048c" />
+
+## Praktikum 2: Framework Lanjutan (CRUD) 
+## Langkah-langkah Praktikum 2
+### Step 1 | Membuat Database
+Buka CLI atau terminal,Setelah itu membuat database dengan nama **labci4**
+
+<img width="628" height="186" alt="Screenshot 2026-04-05 204843" src="https://github.com/user-attachments/assets/69accb6e-c4b5-44fc-9167-967dff7584b3" />
+
+### Step 2 | Membuat Tabel
+
+<img width="617" height="295" alt="Screenshot 2026-04-05 205024" src="https://github.com/user-attachments/assets/3a63506b-c19b-4451-8d39-88dd42399fc7" />
+
+### Step 3 | Mengkonfigurasi koneksi pada database 
+Selanjutnya membuat konfigurasi untuk menghubungkan dengan database server. Konfigurasi dapat dilakukan dengan dua acara, yaitu pada file **app/config/database.php** atau menggunakan **file .env.** Pada praktikum ini kita gunakan konfigurasi pada **file .env.**
+
+<img width="561" height="345" alt="Screenshot 2026-04-05 232705" src="https://github.com/user-attachments/assets/30777e4e-efe2-447b-a78c-b242775f91c0" />
+
+### Step 4 | Membuat Model 
+Kemudian membuat Model untuk memproses data Artikel. Buat file baru pada direktori**app/Models** dengan nama **ArtikelModel.php**
+
+<img width="902" height="471" alt="Screenshot 2026-04-05 233056" src="https://github.com/user-attachments/assets/87114b4c-e07b-472d-a8e0-e1a8015637fb" />
+
+### Step 5 | Membuat Controller 
+Menambahkan Controller baru dengan nama **Artikel.php** pada direktori **app/Controllers.**
+
+<img width="943" height="495" alt="Screenshot 2026-04-05 233252" src="https://github.com/user-attachments/assets/56f9d5b4-dc59-48ed-9723-22646853fbbf" />
+
+### Step 6 | Membuat View 
+Setelah itu membuat direktori baru dengan nama **artikel** pada direktori **app/views**, kemudian buat file baru 
+dengan nama **index.php.**
+
+<img width="997" height="595" alt="Screenshot 2026-04-05 233449" src="https://github.com/user-attachments/assets/f2c7af0f-13c1-4574-b7f4-b2323ebbf48e" />
+
+Selanjutnya buka browser kembali, dengan mengakses url **http://localhost:8080/artikel**
+
+<img width="1919" height="1128" alt="Screenshot 2026-04-05 235747" src="https://github.com/user-attachments/assets/098a0b7a-70a4-420e-a5b8-dd3ed2ef89a6" />
+
+Hasinya Belum ada data yang ditampilkan. Kemudian coba anda tambahkan beberapa data pada database agar dapat ditampilkan datanya. 
+
+<img width="1101" height="275" alt="image" src="https://github.com/user-attachments/assets/1b556271-933b-476c-b36a-f24ead9e6cb4" />
+ 
+Refresh kembali browser, sehingga akan ditampilkan hasilnya.
+
+<img width="1919" height="1127" alt="Screenshot 2026-04-06 002718" src="https://github.com/user-attachments/assets/aecfbf73-524b-455b-b309-8db0d505b04c" />
+
+### Step 7 | Membuat Tampilan Detail Artikel 
+Menampilkan pada saat judul berita, maka akan diarahkan ke halaman yang berbeda. kemudian Tambahkan fungsi baru pada **Controller Artikel** dengan nama **view().** 
+
+<img width="891" height="449" alt="image" src="https://github.com/user-attachments/assets/e175bf85-b649-4848-aafe-7f241afeb6ba" />
+
+### Step 8 | Menambahkan View Detail 
+Buat view baru untuk halaman detail dengan nama **app/views/artikel/detail.php.**
+
+<img width="848" height="261" alt="image" src="https://github.com/user-attachments/assets/b51b9ec2-87aa-4938-8888-026cb953b381" />
+
+### Step 9 | Membuat Routing untuk artikel detail 
+Buka Kembali file **app/config/Routes.php**, kemudian tambahkan routing untuk artikel detail. 
+
+<img width="632" height="63" alt="Screenshot 2026-04-06 003557" src="https://github.com/user-attachments/assets/8d18336b-acd0-4ab1-8fff-627afe65ec32" />
+
+**Hasil Tampilannya**
+
+<img width="1919" height="1129" alt="Screenshot 2026-04-07 162339" src="https://github.com/user-attachments/assets/004aa9b2-de4e-42fd-b1df-0bc52ffd8bd7" />
+
+### Step 10 | Membuat Menu Admin 
+Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller 
+Artikel dengan nama **admin_index().**
+
+<img width="770" height="225" alt="image" src="https://github.com/user-attachments/assets/6939dcdc-afa3-4b76-89c6-903a622e8eb7" />
+
+Selanjutnya buat view untuk tampilan admin dengan nama **admin_index.php**
+
+<img width="923" height="613" alt="image" src="https://github.com/user-attachments/assets/650eda95-4cae-4b31-947f-94de7bff5f9d" />
+
+<img width="938" height="703" alt="image" src="https://github.com/user-attachments/assets/a233a243-90bd-470b-930b-34201202220c" />
+
+Tambahkan routing untuk menu admin seperti berikut: 
+
+<img width="665" height="184" alt="Screenshot 2026-04-07 163127" src="https://github.com/user-attachments/assets/08997cbc-90b1-465e-9289-dacdfa6c21c0" />
+
+Akses menu admin dengan url **http://localhost:8080/admin/artikel**
+
+<img width="1919" height="1128" alt="Screenshot 2026-04-07 183548" src="https://github.com/user-attachments/assets/5a024c55-b532-4646-a5be-0373df61d08a" />
+
+### Step 11 | Menambah Data Artikel 
+Tambahkan fungsi/method baru pada **Controller Artikel** dengan nama **add().**
+
+<img width="894" height="585" alt="image" src="https://github.com/user-attachments/assets/ef5e9e8e-e451-4d13-a132-93de9d55c6cf" />
+
+Kemudian buat view untuk form tambah dengan nama **form_add.php**
+
+<img width="841" height="422" alt="image" src="https://github.com/user-attachments/assets/5561d97d-26f0-423c-a073-475c8f5557f1" />
+
+**Hasil Tampilan**
+
+<img width="1919" height="1131" alt="Screenshot 2026-04-07 201218" src="https://github.com/user-attachments/assets/7fbc0747-8d30-4146-8452-077618221a17" />
+
+### Step 12 | Mengubah Data 
+Tambahkan fungsi/method baru pada **Controller Artikel** dengan nama **edit().**
+
+<img width="1047" height="646" alt="image" src="https://github.com/user-attachments/assets/c62cfdcc-49a5-4074-a862-093e9f5320df" />
+
+Kemudian buat view untuk form tambah dengan nama form_edit.php 
+
+<img width="882" height="458" alt="image" src="https://github.com/user-attachments/assets/f426a513-d991-440d-a96f-105fef58653a" />
+
+**Hasil Tampilan**
+
+<img width="1918" height="1128" alt="Screenshot 2026-04-07 233901" src="https://github.com/user-attachments/assets/5c4426b2-a643-4945-934b-69fd42295931" />
+
+### Step 13 | Menghapus Data 
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().  
+
+<img width="546" height="208" alt="image" src="https://github.com/user-attachments/assets/1de21efb-5ddc-4cf4-8162-a9e77a8a4910" />
+
+## Praktikum 3: View Layout dan View Cell 
+## Langkah-langkah Praktikum 3
+### Step 1 | Membuat Database
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
