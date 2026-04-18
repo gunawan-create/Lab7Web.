@@ -108,7 +108,7 @@ direktori Controller kemudian isi kodenya seperti berikut.
 
 Selanjutnya anda refresh Kembali browser, maka akan ditampilkan hasilnya yaotu halaman sudah dapat diakses. dan hasil tampilannya akan seperti ini.
 
-<img width="1919" height="1126" alt="Screenshot 2026-04-04 204728" src="https://github.com/user-attachments/assets/a1d73c7c-c520-4a2c-a3d8-c75cfeba49db" />
+<img width="1918" height="1128" alt="Screenshot 2026-04-04 202647" src="https://github.com/user-attachments/assets/b9987db4-25c2-4507-b9d3-fe8d9550bdd4" />
 
 ### Step 8 | mengubah status routing 
 Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai **true** menjadi **false.**
