@@ -374,9 +374,13 @@ maka, akan dimuculkan halaman login.
 
 <img width="1919" height="1125" alt="image" src="https://github.com/user-attachments/assets/8f2f9430-f15f-42a2-ad42-af166f2d2fad" />
 
-### Step 7 | Menambahkan Fungsi Logout 
+### Step 8 | Menambahkan Fungsi Logout 
 Tambahkan method logout pada Controller User seperti berikut:
 
 <img width="606" height="202" alt="image" src="https://github.com/user-attachments/assets/1faf3588-5dae-4421-ba42-158892edcf48" />
 
-
+## Praktikum 5: Pagination dan Pencarian 
+## Langkah-langkah Praktikum 5
+### Step 1 | Membuat Pagination 
+Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode 
+pada method admin_index seperti berikut.
