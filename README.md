@@ -1,4 +1,4 @@
-## LAPORAN PRAKTIKUM 1 - 4
+## LAPORAN PRAKTIKUM 1 - 6
 NAMA : ALI GUNAWAN | KELAS : I241C | NIM : 312410400
 
 ## Praktikum 1: PHP Framework (Codeigniter)
@@ -330,7 +330,7 @@ dengan nama **login.php.**
 
 <img width="1107" height="952" alt="image" src="https://github.com/user-attachments/assets/2cf4e03a-5ab3-4228-bf80-b507e555bb74" />
 
-### Step 4 | Menambahkan Database Seeder 
+### Step 5 | Menambahkan Database Seeder 
 Untuk keperluan ujicoba modul login, kita perlu memasukkan data user dan password kedaalam database. Untuk itu buat 
 database seeder untuk tabel user. Buka CLI, kemudian tulis perintah berikut: 
 
@@ -345,12 +345,12 @@ Selanjutnya buka kembali CLI dan ketik perintah berikut:
 
 <img width="927" height="90" alt="Screenshot 2026-04-09 095432" src="https://github.com/user-attachments/assets/19839407-cd70-4e73-8679-ddde9526edba" />
 
-### Step 5 | Uji Coba Login 
+### Step 6 | Uji Coba Login 
 Selanjutnya buka url **http://localhost:8080/user/login** seperti berikut: 
 
 <img width="1919" height="1127" alt="Screenshot 2026-04-09 100934" src="https://github.com/user-attachments/assets/e8f32c75-c5a2-4f2a-9b75-bfc6961e476a" />
 
-### Step 6 | Menambahkan Auth Filter 
+### Step 7 | Menambahkan Auth Filter 
 Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama **Auth.php** pada 
 direktori **app/Filters.**
 
@@ -368,13 +368,13 @@ Setelah itu anda buka file **app/Config/Routes.php** dan sesuaikan kodenya.
 
 <img width="804" height="239" alt="image" src="https://github.com/user-attachments/assets/970234c4-c540-4030-8d5a-3efa998e41a2" />
 
-### Step 7 | Percobaan Akses Menu Admin 
+### Step 8 | Percobaan Akses Menu Admin 
 Buka url dengan alamat **http://localhost:8080/admin/artikel** ketika alamat tersebut diakses 
 maka, akan dimuculkan halaman login.
 
 <img width="1919" height="1125" alt="image" src="https://github.com/user-attachments/assets/8f2f9430-f15f-42a2-ad42-af166f2d2fad" />
 
-### Step 8 | Menambahkan Fungsi Logout 
+### Step 9 | Menambahkan Fungsi Logout 
 Tambahkan method logout pada Controller User seperti berikut:
 
 <img width="606" height="202" alt="image" src="https://github.com/user-attachments/assets/1faf3588-5dae-4421-ba42-158892edcf48" />
