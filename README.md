@@ -383,4 +383,78 @@ Tambahkan method logout pada Controller User seperti berikut:
 ## Langkah-langkah Praktikum 5
 ### Step 1 | Membuat Pagination 
 Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode 
-pada method admin_index seperti berikut.
+pada method **admin_index** seperti berikut.
+
+<img width="705" height="335" alt="image" src="https://github.com/user-attachments/assets/a2276abd-6837-47dd-9186-92526aee0c8f" />
+
+Kemudian buka file **views/artikel/admin_index.php** dan tambahkan kode berikut 
+dibawah deklarasi tabel data. 
+
+<img width="283" height="51" alt="image" src="https://github.com/user-attachments/assets/946c8ec4-a1cd-4d95-904e-8da8772487d7" />
+
+Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat 
+hasilnya.
+
+<img width="1919" height="1125" alt="Screenshot 2026-04-15 140429" src="https://github.com/user-attachments/assets/e31894bc-1ebd-4674-8b39-b0fa6c58311d" />
+
+### Step 2 | Membuat Pencarian 
+Untuk membuat pencarian data, buka kembali **Controller Artikel**, pada method 
+**admin_index** ubah kodenya seperti berikut,
+
+<img width="777" height="393" alt="image" src="https://github.com/user-attachments/assets/566af78d-eccd-4f0b-b05a-446c1e47780b" />
+
+Kemudian buka kembali file **views/artikel/admin_index.php** dan tambahkan form 
+pencarian sebelum deklarasi tabel seperti berikut,
+
+<img width="950" height="143" alt="image" src="https://github.com/user-attachments/assets/33b7badc-f0de-44dc-809d-1fec8b507459" />
+
+Dan pada link pager ubah seperti ini
+
+<img width="466" height="63" alt="image" src="https://github.com/user-attachments/assets/f369e8fc-eff4-4edb-b8d5-37de4eb4b663" />
+
+Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata 
+kunci tertentu pada form pencarian.
+
+<img width="1919" height="1022" alt="Screenshot 2026-04-14 130953" src="https://github.com/user-attachments/assets/ebfb3c94-2207-42aa-b9e4-5659f0df0730" />
+
+## Praktikum 6: Pagination dan Pencarian 
+## Langkah-langkah Praktikum 6
+### Step 1 |  Membuat Tabel Kategori 
+Pada praktikum ini, Kita akan membuat tabel baru bernama **`kategori`** untuk mengkategorikan artikel.
+
+<img width="681" height="225" alt="Screenshot 2026-04-15 141625" src="https://github.com/user-attachments/assets/3c6b1396-b384-4b8f-ab0e-80e41f11ae9a" />
+
+### Step 2 |  Mengubah Tabel Artikel 
+Untuk menambahkan foreign key **`id_kategori`** pada tabel **`artikel`**, anda bisa membuat relasi dengan tabel **`kategori`**.  
+
+<img width="1020" height="261" alt="Screenshot 2026-04-15 142357" src="https://github.com/user-attachments/assets/885fde57-6826-4a25-9885-0ef4d5aafa95" />
+
+### Step 3 | Membuat Model Kategori 
+Buat file model baru di **`app/Models`** dengan nama **`KategoriModel.php`**, 
+
+<img width="901" height="433" alt="Screenshot 2026-04-15 143512" src="https://github.com/user-attachments/assets/6eeaa4ff-f3dd-41d2-9397-bbe89ef49c92" />
+
+### Step 4 | Memodifikasi Model Artikel 
+Modifikasi `ArtikelModel.php` untuk mendefinisikan relasi dengan `KategoriModel`
+
+<img width="1202" height="669" alt="Screenshot 2026-04-15 144332" src="https://github.com/user-attachments/assets/d1a4c844-1b96-44cb-b6fa-c9c7d7eb8034" />
+
+### Step 5 | Memodifikasi Controller Artikel 
+Modifikasi `Artikel.php` untuk menggunakan model baru dan menampilkan data relasi:
+
+<img width="1073" height="654" alt="image" src="https://github.com/user-attachments/assets/98656e70-990b-4713-88e2-d4013debe816" />
+
+<img width="1137" height="918" alt="image" src="https://github.com/user-attachments/assets/135b6839-98dc-4aac-9c6c-0e7b73108c8c" />
+
+<img width="1033" height="768" alt="image" src="https://github.com/user-attachments/assets/26d0d403-dad8-4c91-91bd-8a1a34ce1b9f" />
+
+<img width="1044" height="820" alt="image" src="https://github.com/user-attachments/assets/b90afd34-8c16-45c5-8f49-320c7f6dc473" />
+
+<img width="1162" height="422" alt="image" src="https://github.com/user-attachments/assets/3ea79a7c-77c8-464f-b478-dd8a39cb1d3d" />
+
+### Step 6 | Memodifikasi View 
+Menyesuaikan floder view/artikel untuk masing-masing view di index.php:
+
+<img width="935" height="565" alt="image" src="https://github.com/user-attachments/assets/b375690b-fd5c-431e-9421-4fcff9ce111c" />
+
+**admin_index.php**
