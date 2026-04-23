@@ -458,3 +458,22 @@ Menyesuaikan floder view/artikel untuk masing-masing view di index.php:
 <img width="935" height="565" alt="image" src="https://github.com/user-attachments/assets/b375690b-fd5c-431e-9421-4fcff9ce111c" />
 
 **admin_index.php**
+
+<img width="1306" height="925" alt="image" src="https://github.com/user-attachments/assets/e576a0c6-ae0b-46b4-8394-90a1811f2856" />
+
+<img width="1286" height="747" alt="image" src="https://github.com/user-attachments/assets/d391a5b0-6acf-4fff-8a03-cd009bc44b11" />
+
+<img width="1242" height="115" alt="image" src="https://github.com/user-attachments/assets/d61dd686-2ae5-48e0-8f42-02b4220c5e37" />
+
+**form_add.php**
+
+<img width="1148" height="742" alt="image" src="https://github.com/user-attachments/assets/70a70819-c707-4dbe-9a40-8cffa7d85402" />
+
+**form_edit.php**
+
+<img width="1188" height="848" alt="image" src="https://github.com/user-attachments/assets/089da809-6ad0-4867-97ce-058f22769ad1" />
+
+Menampilkan daftar artikel dengan nama kategori
+
+<img width="1919" height="1127" alt="Screenshot 2026-04-17 095856" src="https://github.com/user-attachments/assets/092472e9-24c9-48cd-a6f1-f2a920915a13" />
+
