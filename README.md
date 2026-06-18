@@ -1,4 +1,4 @@
-## LAPORAN PRAKTIKUM 1 - 6
+## LAPORAN PRAKTIKUM 1 - 10
 NAMA : ALI GUNAWAN | KELAS : I241C | NIM : 312410400
 
 ## Praktikum 1: PHP Framework (Codeigniter)
